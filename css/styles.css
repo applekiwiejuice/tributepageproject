@@ -1,0 +1,125 @@
+body {
+  display: grid;
+  grid-template-rows: auto;
+  background: #00072b;
+  background-image: url("https://i.imgur.com/KCaFR53h.jpg");
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+#main {
+  display: grid;
+  height: 100vh;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#img-div {
+  flex: 0 1 500px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#image {
+  width: 60vh;
+  background-color: transparent;
+  margin: 10px;
+  filter: drop-shadow(2px 4px 8px #19ccef);
+}
+
+#title {
+  font-family: "Romanesco", cursive;
+  font-size: 7rem;
+  color: #19ccef;
+  margin: 0;
+}
+
+#img-caption {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #fe03a6;
+  margin: 0;
+}
+
+#tribute-info {
+  flex: 0 1 500px;
+  padding-top: 120px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#tribute-link {
+  text-align: center;
+  color: #19ccef;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+#tribute-link:hover {
+  color: #fe03a6;
+  font-size: 1.1rem;
+}
+
+.swiper-container {
+  width: 50vw;
+}
+
+.swiper-slide {
+  flex-direction: column;
+  text-align: left;
+  color: white;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: flex-start;
+}
+
+.swiper-slide h1 {
+  font-family: "Romanesco", cursive;
+  font-size: 60px;
+  color: #19ccef;
+  margin: 10px;
+}
+
+.swiper-slide h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #fe03a6;
+
+  margin: 5px;
+}
+
+.swiper-slide p {
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  margin: 10px 10px 30px;
+}
+
+.swiper-slide a {
+  color: #fe03a6;
+}
+
+#quote {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}

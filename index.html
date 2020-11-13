@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="" />
+    <meta content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Tribute Page Project</title>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="http://www.iconj.com/ico/t/u/tuxhz2oqf0.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Romanesco&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <div class="parent">
+        <div id="img-div">
+          <img
+            id="image"
+            src="https://i.imgur.com/glQnAnO.png"
+            alt="socrates"
+          />
+          <h1 id="title">SOCRATES</h1>
+          <caption>
+            <h1 id="img-caption">"The Death of Socrates"</h1>
+          </caption>
+        </div>
+        <div id="tribute-info">
+          <a
+            id="tribute-link"
+            href="https://youtu.be/rKhfFBbVtFg"
+            target="_blank"
+            ><h1>The Death of Socrates:<br />How To Read A Painting</h1></a
+          >
+          <!-- Swiper -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h1>Socrates</h1>
+                <h3>Greek Philosopher</h3>
+                <p>
+                  Socrates, (born c. 470 BCE, Athens [Greece]—died 399 BCE,
+                  Athens), Greek philosopher whose way of life, character, and
+                  thought exerted a profound influence on ancient and modern
+                  philosophy.
+                  <a
+                    href="https://www.britannica.com/biography/Socrates"
+                    target="_blank"
+                    >Source</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h1>The strangest of the Greek philosophers</h1>
+                <h3>Founding figure of Western philosophy</h3>
+                <p>
+                  Best known as a questioner of everything and everyone. His
+                  style of teaching—immortalized as the Socratic method—involved
+                  not conveying knowledge, but rather asking question after
+                  clarifying question until his students arrived at their own
+                  understanding.
+                  <a
+                    href="https://www.history.com/topics/ancient-history/socrates"
+                    target="_blank"
+                    >Source</a
+                  >
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <h1>Famous dictum</h1>
+                <h3>
+                  One of the most famous proclamations in the history of
+                  philosophy
+                  <a href="https://iep.utm.edu/socrates/" target="_blank"
+                    >Source</a
+                  >
+                </h3>
+                <p id="quote">"The unexamined life is not worth living"</p>
+              </div>
+              <div class="swiper-slide">
+                <iframe
+                  style="width: 45vw; height: 45vh"
+                  src="https://www.youtube.com/embed/bJUuOnsRcvc"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
+</html>
